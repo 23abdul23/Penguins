@@ -1,0 +1,115 @@
+.outermost{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the text section is above the diagonal split */
+.start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width for better readability */
+    background: rgba(255, 255, 255, 0.8); /* Optional: Adds slight transparency for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2; /* Ensures it's above the boxes */
+}
+
+.spec_island{
+    position: absolute;
+    z-index: 2;
+
+    top: 75%;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+    padding: 20px;
+
+    font-size: 14px;
+
+}
+
+#inner{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#inner button{
+    font-size: 20px;
+    margin-top: 25px;
+    border: 2px black solid;
+    padding: 5px;
+
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+#inner button:hover{
+    background-position: left bottom;
+    color: white;    
+}
+
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+}
+
+#landing-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #7FCCFF;
+    position: relative;
+    z-index: 1; /* Ensures it remains behind the text */
+}
+
+#box-left {
+    width: 60%;
+    clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
+    margin-right: -4.2vh;
+    padding: 5px 11vh 5px 5px;
+    /* background-color: #F4FCFF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-right {
+    width: 65%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
+    margin-left: -4.2vh;
+    padding: 5px 5px 5px 11vh;
+    background-color: #3880C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.penguin-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#box-left {
+    background-image: url("./assets/peng.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
