@@ -21,7 +21,8 @@ Legend
 );
 
 import _ from 'lodash'
-import penguins from '../../../penguins.json'
+
+import penguins from '../data/penguins.json';
 
 
 const species = [... new Set(Object.values(penguins["Species"]))];
