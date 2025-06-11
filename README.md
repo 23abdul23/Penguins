@@ -5,6 +5,8 @@
 🚀 **Introducing: The Penguins Data Visualization Dashboard**
 An interactive web app built during my second semester to explore the **Palmer Penguins dataset**—uncovering fascinating patterns in species traits, diets, and habitats.
 
+Site: https://23abdul23.github.io/Penguins/
+
 🔍 **What does it do?**
 
 * Interactive **bar charts**, **heatmaps**, and **sliders** to compare species by **body mass**, **flipper length**, **island**, and **diet**.
